@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:listacontatos/data/repository/repository.dart';
+import 'package:listacontatos/pages/home/view/home_list.dart';
 
-import '../create_person/create_person.dart';
+import '../../create_person/create_person.dart';
+import '../home.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -16,9 +20,10 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text("Home Screen"),
       ),
-      body: ListView.builder(itemBuilder: (_, index) {
-        return const ListTile();
-      }),
+      body: BlocProvider(
+        create: (context) => HomeCubit(context.read<ContactRepository>()),
+        child: const HomeList(),
+      ),
       floatingActionButton: FloatingActionButton(
           onPressed: () {
             Navigator.push(

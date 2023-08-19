@@ -1,6 +1,6 @@
-import '../models/pessoa.dart';
+import '../models/contact.dart';
 
 abstract class ContactRepository {
   Future<Contact> create({required Contact contact});
-  Future<Contact> get();
+  Future<List<Contact>> get();
 }
