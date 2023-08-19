@@ -10,7 +10,6 @@ class CreatePersonForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.sizeOf(context).width;
-    final height = MediaQuery.sizeOf(context).height;
     return BlocListener<CreatePersonCubit, CreatePersonState>(
       listener: (context, state) {
         if (state.status == CreatePersonStatus.error) {
