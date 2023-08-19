@@ -16,9 +16,9 @@ O objetivo deste aplicativo é demonstrar boas práticas de arquitetura e uso de
 O projeto segue uma arquitetura baseada em BLoC e Cubit para o gerenciamento de estado. A estrutura de pastas é organizada da seguinte forma:
 
 - **lib/**
-  - **core/**: Contém os arquivos relacionados aos BLoCs.
+  - **core/**: Contém arquivos úteis para toda a aplicação.
   - **data/**: Contém os modelos de dados utilizados no aplicativo, a comunicação com o banco e seus respectivos repositories.
-  - **pages/**: Contém as diferentes telas do aplicativo, os arquivos relacionados aos BLoCs.
+  - **pages/**: Contém as diferentes telas do aplicativo, e os arquivos relacionados aos Cubits.
 
 ## Contribuição
 
