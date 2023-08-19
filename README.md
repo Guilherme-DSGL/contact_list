@@ -1,16 +1,25 @@
-# listacontatos
+# Lista de Contatos usando Flutter, BLoC, Cubit e Back4App
 
-A new Flutter project.
+Este é um aplicativo simples de Lista de Contatos desenvolvido utilizando Flutter, gerenciamento de estado com BLoC e Cubit, e integração com a plataforma Back4App para realizar requisições HTTP e armazenar os dados no Shared Preferences.
 
-## Getting Started
+O objetivo deste aplicativo é demonstrar boas práticas de arquitetura e uso de tecnologias populares para o desenvolvimento de aplicativos móveis.
 
-This project is a starting point for a Flutter application.
+## Recursos
 
-A few resources to get you started if this is your first Flutter project:
+- Exibir uma lista de contatos com nome, número de telefone.
+- Adicionar novos contatos com informações completas.
+- Editar informações existentes de contatos.
+- Realizar requisições HTTP para obter e enviar dados da lista de contatos para o Back4App.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Arquitetura e Estrutura do Projeto
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+O projeto segue uma arquitetura baseada em BLoC e Cubit para o gerenciamento de estado. A estrutura de pastas é organizada da seguinte forma:
+
+- **lib/**
+  - **core/**: Contém os arquivos relacionados aos BLoCs.
+  - **data/**: Contém os modelos de dados utilizados no aplicativo, a comunicação com o banco e seus respectivos repositories.
+  - **pages/**: Contém as diferentes telas do aplicativo, os arquivos relacionados aos BLoCs.
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
